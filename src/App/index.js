@@ -1,9 +1,12 @@
 import React from "react";
+import Hover from "../Components/hoverComponent";
+import Over from "../Components/mouseoverComponent";
 
 const App = () => {
   return (
     <div>
-      <div>App</div>
+      <Hover/>
+      <Over/>
     </div>
   );
 };
