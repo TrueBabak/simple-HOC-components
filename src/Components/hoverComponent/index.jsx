@@ -8,7 +8,9 @@ const Hover = () => {
   };
   return (
     <div>
-      <div onMouseOver={hoverFunc}>{Hover} Times hover</div>
+      <div onMouseOver={hoverFunc} className="select-none">
+        {Hover} Times hover
+      </div>
     </div>
   );
 };

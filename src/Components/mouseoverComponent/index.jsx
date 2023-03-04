@@ -8,7 +8,9 @@ const Over = () => {
   };
   return (
     <div>
-      <div onClick={overFunc}>{Over} Times Over</div>
+      <div onClick={overFunc} className="select-none">
+        {Over} Times Over
+      </div>
     </div>
   );
 };
