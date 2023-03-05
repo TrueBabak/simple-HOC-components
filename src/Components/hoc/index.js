@@ -1,13 +1,17 @@
 import React, { useState } from "react";
 
-const WhitCounter = (WrapperComponents) => {
-  const UpdateComponent = () => {
+const WhitCounter = (WrapperComponents, componentValue) => {
+  const UpdateComponent = (props) => {
     const [Counter, setCounter] = useState(0);
     const incrementCount = () => {
-      setCounter(Counter + 1);
+      setCounter(Counter + componentValue);
     };
     return (
-      <WrapperComponents Counter={Counter} incrementCount={incrementCount} />
+      <WrapperComponents
+        Counter={Counter}
+        incrementCount={incrementCount}
+        {...props}
+      />
     );
   };
   return UpdateComponent;

@@ -1,7 +1,7 @@
 import React from "react";
 import WhitCounter from "../hoc";
 
-const Hover = ({ Counter, incrementCount }) => {
+const Hover = ({ Counter, incrementCount, name }) => {
   return (
     <div>
       <div onMouseOver={incrementCount} className="select-none">
@@ -11,4 +11,4 @@ const Hover = ({ Counter, incrementCount }) => {
   );
 };
 
-export default WhitCounter(Hover);
+export default WhitCounter(Hover, 2);

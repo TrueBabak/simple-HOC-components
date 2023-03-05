@@ -11,4 +11,4 @@ const Click = ({ Counter, incrementCount }) => {
   );
 };
 
-export default whitCounter(Click);
+export default whitCounter(Click, 5);

@@ -5,7 +5,7 @@ import Click from "../Components/mouseoverComponent";
 const App = () => {
   return (
     <div>
-      <Hover />
+      <Hover name="babak" />
       <Click />
     </div>
   );
