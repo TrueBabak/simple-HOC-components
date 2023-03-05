@@ -1,18 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
+import whitCounter from "../hoc";
 
-const Over = () => {
-  const [Over, setOver] = useState(0);
-  const overFunc = () => {
-    console.log("over");
-    setOver(Over + 1);
-  };
+const Click = ({ Counter, incrementCount }) => {
   return (
     <div>
-      <div onClick={overFunc} className="select-none">
-        {Over} Times Over
+      <div onClick={incrementCount} className="select-none">
+        {Counter} Times hover
       </div>
     </div>
   );
 };
 
-export default Over;
+export default whitCounter(Click);

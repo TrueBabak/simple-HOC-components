@@ -1,18 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
+import WhitCounter from "../hoc";
 
-const Hover = () => {
-  const [Hover, setHover] = useState(0);
-  const hoverFunc = () => {
-    console.log("hover");
-    setHover(Hover + 1);
-  };
+const Hover = ({ Counter, incrementCount }) => {
   return (
     <div>
-      <div onMouseOver={hoverFunc} className="select-none">
-        {Hover} Times hover
+      <div onMouseOver={incrementCount} className="select-none">
+        {Counter} Times hover
       </div>
     </div>
   );
 };
 
-export default Hover;
+export default WhitCounter(Hover);

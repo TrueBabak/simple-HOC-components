@@ -1,12 +1,12 @@
 import React from "react";
 import Hover from "../Components/hoverComponent";
-import Over from "../Components/mouseoverComponent";
+import Click from "../Components/mouseoverComponent";
 
 const App = () => {
   return (
     <div>
-      <Hover/>
-      <Over/>
+      <Hover />
+      <Click />
     </div>
   );
 };
